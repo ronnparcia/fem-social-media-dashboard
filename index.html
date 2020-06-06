@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+		<title>Social Media Dashboard</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<span>
+					<h1 class="header__title">Social Media Dashboard</h1>
+					<p class="header__total">Total Followers: 23,004</p>
+				</span>
+				<div class="theme-switch-wrapper">
+					<strong>Dark Mode</strong>
+					<label class="theme-switch" for="checkbox">
+						<input type="checkbox" id="checkbox" />
+						<div class="slider round"></div>
+					</label>
+				</div>
+			</header>
+			<section id="followers" class="grid">
+				<div class="grid__card grid__card--fb">
+					<div class="account">
+						<img src="images/icon-facebook.svg" alt="Facebook" class="account__icon" />
+						<span class="account__label">@nathanf</span>
+					</div>
+					<div class="followers">
+						<span class="followers__count">1987</span>
+						<span class="followers__label">Followers</span>
+					</div>
+					<div class="accumulation accumulation--inc">12 Today</div>
+				</div>
+				<div class="grid__card grid__card--tw">
+					<div class="account">
+						<img src="images/icon-twitter.svg" alt="Twitter" class="account__icon" />
+						<span class="account__label">@nathanf</span>
+					</div>
+					<div class="followers">
+						<span class="followers__count">1044</span>
+						<span class="followers__label">Followers</span>
+					</div>
+					<span class="accumulation accumulation--inc">99 Today</span>
+				</div>
+				<div class="grid__card grid__card--ig">
+					<div class="account">
+						<img src="images/icon-instagram.svg" alt="Instagram" class="account__icon" />
+						<span class="account__label">@realnathanf</span>
+					</div>
+					<div class="followers">
+						<span class="followers__count">11k</span>
+						<span class="followers__label">Followers</span>
+					</div>
+					<span class="accumulation accumulation--inc">1099 Today</span>
+				</div>
+				<div class="grid__card grid__card--yt">
+					<div class="account">
+						<img src="images/icon-youtube.svg" alt="YouTube" class="account__icon" />
+						<span class="account__label">Nathan F.</span>
+					</div>
+					<div class="followers">
+						<span class="followers__count">8239</span>
+						<span class="followers__label">Subscribers</span>
+					</div>
+					<span class="accumulation accumulation--dec">144 Today</span>
+				</div>
+			</section>
+			<section id="overview">
+				<h2>Overview - Today</h2>
+				<div class="grid">
+					<!-- FB Page Views -->
+					<div class="grid__card">
+						<div class="account">
+							<span class="account__label">Page Views</span>
+							<img src="images/icon-facebook.svg" alt="Facebook" class="account__icon" />
+						</div>
+						<div class="overview__stats">
+							<span class="overview__total">87</span>
+							<span class="accumulation accumulation--inc">3%</span>
+						</div>
+					</div>
+					<!-- FB Likes -->
+					<div class="grid__card">
+						<div class="account">
+							<span class="account__label">Likes</span>
+							<img src="images/icon-facebook.svg" alt="Facebook" class="account__icon" />
+						</div>
+						<div class="overview__stats">
+							<span class="overview__total">52</span>
+							<span class="accumulation accumulation--dec">2%</span>
+						</div>
+					</div>
+					<!-- IG Likes -->
+					<div class="grid__card">
+						<div class="account">
+							<span class="account__label">Likes</span>
+							<img src="images/icon-instagram.svg" alt="Instagram" class="account__icon" />
+						</div>
+						<div class="overview__stats">
+							<span class="overview__total">5462</span>
+							<span class="accumulation accumulation--inc">2257%</span>
+						</div>
+					</div>
+					<!-- IG Profile Views -->
+					<div class="grid__card">
+						<div class="account">
+							<span class="account__label">Profile Views</span>
+							<img src="images/icon-instagram.svg" alt="Instagram" class="account__icon" />
+						</div>
+						<div class="overview__stats">
+							<span class="overview__total">52k</span>
+							<span class="accumulation accumulation--inc">1375%</span>
+						</div>
+					</div>
+					<!-- TW Retweets -->
+					<div class="grid__card">
+						<div class="account">
+							<span class="account__label">Retweets</span>
+							<img src="images/icon-twitter.svg" alt="Twitter" class="account__icon" />
+						</div>
+						<div class="overview__stats">
+							<span class="overview__total">117</span>
+							<span class="accumulation accumulation--inc">303%</span>
+						</div>
+					</div>
+					<!-- TW Likes -->
+					<div class="grid__card">
+						<div class="account">
+							<span class="account__label">Likes</span>
+							<img src="images/icon-twitter.svg" alt="Twitter" class="account__icon" />
+						</div>
+						<div class="overview__stats">
+							<span class="overview__total">507</span>
+							<span class="accumulation accumulation--inc">553%</span>
+						</div>
+					</div>
+					<!-- YT Likes -->
+					<div class="grid__card">
+						<div class="account">
+							<span class="account__label">Likes</span>
+							<img src="images/icon-youtube.svg" alt="YouTube" class="account__icon" />
+						</div>
+						<div class="overview__stats">
+							<span class="overview__total">107</span>
+							<span class="accumulation accumulation--dec">19%</span>
+						</div>
+					</div>
+					<!-- YT Total Views -->
+					<div class="grid__card">
+						<div class="account">
+							<span class="account__label">Total Views</span>
+							<img src="images/icon-youtube.svg" alt="YouTube" class="account__icon" />
+						</div>
+						<div class="overview__stats">
+							<span class="overview__total">1407</span>
+							<span class="accumulation accumulation--dec">12%</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.github.com/ronnparcia">Ronn Parcia</a>.
+            </footer>
+		</div>
+		<script>
+			const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+			function switchTheme(e) {
+				if (e.target.checked) {
+					document.documentElement.setAttribute("data-theme", "dark");
+				} else {
+					document.documentElement.setAttribute("data-theme", "light");
+				}
+			}
+
+			toggleSwitch.addEventListener("change", switchTheme, false);
+		</script>
+	</body>
+</html>
